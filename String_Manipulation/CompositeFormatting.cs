@@ -84,7 +84,14 @@ namespace String_Manipulation
         {
             Console.Clear();
 
-            //
+            // Format item syntax
+            // {0, 20} 
+            // 0 - index component
+            // 20 - Alignment component - optional signed integer. Formatted field's preferred width
+            // Includes padding if required. 
+            // {0,-10} Negative, left aligned, width 10
+            // {0,20} Positive, right aligned, width 20
+            // Note, alignment format pretty rare.
             var qualifyingTimes = new Dictionary<string, TimeSpan>
             {
                 {"Damon Hill", new TimeSpan(0, 0, 1, 26, 875)},
@@ -92,11 +99,13 @@ namespace String_Manipulation
                 {"Michael Schumacher", new TimeSpan(0, 0, 1, 27, 707)}
             };
 
+            // Cw - supports String.Format() syntax automatically
             Console.WriteLine("{0,-20}{1,10}", "Driver", "Lap time");
             Console.WriteLine();
 
             foreach (var result in qualifyingTimes)
             {
+                // Minutes, seconds, and a 3 portion of the fractional lap time
                 Console.WriteLine("{0,-20}{1,10:mm\\:ss\\.fff}", result.Key, result.Value);
             }
 
