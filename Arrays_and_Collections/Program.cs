@@ -1,4 +1,4 @@
-﻿using Arrays_and_Collections.Models;
+﻿using Arrays_and_Collections.Models.BusApp;
 using Arrays_and_Collections.Repositories;
 using Arrays_and_Collections.Utils;
 using System;

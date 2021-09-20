@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Arrays_and_Collections.Models
+namespace Arrays_and_Collections.Models.BusApp
 {
     public class BusRouteListBased
     {

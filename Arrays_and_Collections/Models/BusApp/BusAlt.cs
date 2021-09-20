@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Arrays_and_Collections.Models
+namespace Arrays_and_Collections.Models.BusApp
 {
     // Uses a linked list to manage passengers on the bus. 
     public class BusAlt

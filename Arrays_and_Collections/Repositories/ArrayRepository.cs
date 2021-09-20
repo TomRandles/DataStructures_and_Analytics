@@ -1,4 +1,5 @@
 ﻿using Arrays_and_Collections.Models;
+using Arrays_and_Collections.Models.BusApp;
 using System;
 
 namespace Arrays_and_Collections.Repositories
